@@ -1,10 +1,10 @@
 //-----------
 //Dependencies
 //-----------
-const express = require('express')
-const methodOverride = require('method-override')
-const mongoose = require('mongoose')
-const app = express()
+const express = require('express');
+const methodOverride = require('method-override');
+const mongoose = require('mongoose');
+const app = express();
 const db = mongoose.connection
 require('dotenv').config()
 //____________
@@ -44,9 +44,17 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
+
+//This is creating a new route
+app.get('/trips/new' , (req, res) => {
+  res.render('new.ejs');
 });
+
+//This the create route
+app.post('/trips', (req, res)=> {
+  res.send('received');
+});
+
 
 //___________________
 //Listener
