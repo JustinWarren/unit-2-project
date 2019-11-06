@@ -46,6 +46,12 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 //localhost:3000
 
+//This is the index route
+app.get('/trips', (req, res)=>{
+  res.render('index.ejs');
+});
+
+
 //This is creating a new route
 app.get('/trips/new' , (req, res) => {
   res.render('new.ejs');
@@ -53,7 +59,9 @@ app.get('/trips/new' , (req, res) => {
 
 //This the create route
 app.post('/trips', (req, res)=> {
-  res.send(req.body);
+  Trip.create(req.body, (error, createdTrip)=>{
+      res.send(createdTrip);
+  });
 });
 
 // Note to self - I just created the new route and new.ejs and then am in then
