@@ -48,7 +48,11 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 //This is the index route
 app.get('/trips', (req, res)=>{
-  res.render('index.ejs');
+  Trip.find({}, (error, allTrips)=> {
+    res.render('index.ejs', {
+        trips: allTrips
+    });
+  });
 });
 
 
