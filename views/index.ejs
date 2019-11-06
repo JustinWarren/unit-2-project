@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>Trips Index Page</h1>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>Trips Index Page</h1>
+    <ul>
+      <% for(let i = 0; i < trips.length; i++) { %>
+        <li><%=trips[i].nationalpark; %></li>
+      <% } %>
+    </ul>
+
+    <form class="" action="/trips/new">
+      <input type="submit" name="" value="Create New Trip">
+    </form>
   </body>
-</html>
+  </html>
