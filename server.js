@@ -61,10 +61,19 @@ app.get('/trips/new' , (req, res) => {
   res.render('new.ejs');
 });
 
+//This is show route
+app.get('/trips/:id', (req, res)=>{
+  Trip.findById(req.params.id, (err, foundTrip)=>{
+      res.render('show.ejs', {
+        trips: foundTrip
+      });
+  });
+});
+
 //This the create route
 app.post('/trips', (req, res)=> {
   Trip.create(req.body, (error, createdTrip)=>{
-      res.send(createdTrip);
+      res.redirect('/trips');  //This redirects back to index after trip creation
   });
 });
 

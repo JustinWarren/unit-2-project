@@ -8,7 +8,12 @@
   <h1>Trips Index Page</h1>
     <ul>
       <% for(let i = 0; i < trips.length; i++) { %>
-        <li><%=trips[i].nationalpark; %></li>
+        <a href="/trips/<%=trips[i].id; %>">
+        <li><%=trips[i].nationalpark; %></li></a>
+        <li><%=trips[i].state; %></li>
+        <li><%=trips[i].season; %></li>
+        <li><%=trips[i].memory; %></li>
+        <li><%=trips[i].img; %></li>
       <% } %>
     </ul>
 
