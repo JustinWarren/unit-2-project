@@ -5,6 +5,7 @@ const express = require('express');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 const app = express();
+const Trip = require('./models/trips.js');
 const db = mongoose.connection
 require('dotenv').config()
 //____________
@@ -52,10 +53,12 @@ app.get('/trips/new' , (req, res) => {
 
 //This the create route
 app.post('/trips', (req, res)=> {
-  res.send('received');
+  res.send(req.body);
 });
 
-
+// Note to self - I just created the new route and new.ejs and then am in then
+// process of creating the create route.  Tried to do the heroku push and have error
+// screen.  Maybe because I don't have index page yet?
 //___________________
 //Listener
 //___________________
