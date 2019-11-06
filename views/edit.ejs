@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>Edit Trip</h1>
+    <form action="/trips/<%=trips.id%>?_method=PUT" method="POST">
+      National Park: <input type="text" name="nationalpark" value="<%=trips.nationalpark%>"/></br>
+      State: <input type="text" name="state" value="<%=trips.state%>"/></br>
+      Season: <input type="text" name="season" value="<%=trips.season%>"/></br>
+      Favorite Memory: <input type="text" name="memory" value="<%=trips.memory%>"/></br>
+      Image URL <input type="text" name="img" value="<%=trips.img%>"/></br>
+
+      <!-- This is the button to submit changes -->
+      <input type="submit" value="Submit Changes">
+    </form>
+
+
+
+  </body>
+  </html>

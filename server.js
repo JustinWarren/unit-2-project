@@ -55,7 +55,6 @@ app.get('/trips', (req, res)=>{
   });
 });
 
-
 //This is creating a new route
 app.get('/trips/new' , (req, res) => {
   res.render('new.ejs');
@@ -77,9 +76,36 @@ app.post('/trips', (req, res)=> {
   });
 });
 
-// Note to self - I just created the new route and new.ejs and then am in then
-// process of creating the create route.  Tried to do the heroku push and have error
-// screen.  Maybe because I don't have index page yet?
+//This is a delete route
+app.delete('/trips/:id', (req, res)=> {
+  Trip.findByIdAndRemove(req.params.id, (err, data)=> {
+      res.redirect('/trips'); //redirect back to trips index
+  });
+});
+
+
+//This is the edit route
+app.get('/trips/:id/edit', (req, res)=>{
+  Trip.findById(req.params.id, (err, foundTrip)=> { //find the trip
+    res.render(
+      'edit.ejs',
+        {
+            trips: foundTrip //This will pass in the found trip
+        }
+    );
+  });
+});
+
+//This is the put route
+app.put('/trips/:id', (req, res)=> {
+  Trip.findByIdAndUpdate(req.params.id, req.body, { new: true}, (err, updatedModel) => {
+      console.log(updatedModel);
+      res.redirect('/trips');
+    });
+});
+
+
+
 //___________________
 //Listener
 //___________________

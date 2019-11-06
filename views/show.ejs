@@ -9,6 +9,14 @@
       I went to <%=trips.nationalpark; %> national park.</br>
       It is located in the state of <%=trips.state; %>.</br>
       I went during the <%=trips.season; %>.</br>
-      My favorite memory was <%=trips.memory; %>.
+      My favorite memory was <%=trips.memory; %></br>
+      This is a picture:
+      <div class="">
+        <img src="<%=trips.img; %>" alt="">
+      </div>
+
+      <form action="/trips">
+        <input type="submit" name="" value="Back to Main Index">
+      </form>
   </body>
 </html>
