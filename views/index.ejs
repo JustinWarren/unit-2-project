@@ -2,20 +2,28 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
   <title></title>
 </head>
 <body>
-  <h1>Trips Index Page</h1>
-  <% for(let i = 0; i < trips.length; i++) { %>
-    <ul>
-        <a href="/trips/<%=trips[i].id; %>">
-        <li><%=trips[i].nationalpark; %></li></a>
-        <li><%=trips[i].state; %></li>
-        <li><%=trips[i].season; %></li>
-        <li><%=trips[i].memory; %></li>
-        <li><%=trips[i].img; %></li>
-    </ul>
+  <header>
+    <img class="logo" src="https://i.imgur.com/TasFtEe.png" alt="Logo of mountains">
+    <h3>MyTrip</h3>
+  </header>
 
+  <h3 class="title">My Trips</h3>
+  <div class="container">
+    <% for(let i = 0; i < trips.length; i++) { %>
+      <ul>
+          <a href="/trips/<%=trips[i].id; %>">
+          <li><%=trips[i].nationalpark; %></li></a>
+          <li><%=trips[i].state; %></li>
+          <li><%=trips[i].season; %></li>
+          <li><%=trips[i].memory; %></li>
+          <li><%=trips[i].img; %></li>
+      </ul>
     <!-- This is a delete button to delete a trip entry -->
     <form action="/trips/<%=trips[i].id; %>?_method=DELETE" method="POST">
       <input type="submit" name="" value="Delete">
@@ -27,7 +35,7 @@
     </form>
 
       <% } %>
-
+    </div>
 
     <form class="" action="/trips/new">
       <input type="submit" name="" value="Create New Trip">

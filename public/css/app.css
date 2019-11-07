@@ -1,0 +1,45 @@
+/*  Main Fonts  headers - Josefin Sans  text - Roboto
+Main colors: #F8971D(Carrot Orange), #113643 (Yankee Blue), #EDF2F5(Anti-Flash White)*/
+
+body {
+  background-color: #EDF2F5;
+  font-family: Roboto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #113643;
+  padding: 1em;
+}
+
+header h3 {
+  text-align: center;
+  font-family: "Josefin Sans";
+  color: #F8971D;
+  margin-top: 10px;
+  margin-right: 15px;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 4.6875em;
+  height: 2.5em;
+  margin-left: 15px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Josefin Sans";
+  color: #F8971D;
+  padding: 2.25em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border: solid 2px #0C0C0C;
+  padding: 3em;
+}
