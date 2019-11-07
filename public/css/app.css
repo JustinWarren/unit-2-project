@@ -2,7 +2,7 @@
 Main colors: #F8971D(Carrot Orange), #113643 (Yankee Blue), #EDF2F5(Anti-Flash White)*/
 
 body {
-  background-color: #EDF2F5;
+  /* background-color: #EDF2F5; */
   font-family: Roboto;
 }
 
@@ -40,6 +40,21 @@ header h3 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
   border: solid 2px #0C0C0C;
   padding: 3em;
+}
+
+
+.trip-card {
+  /* border: solid 1px #113643; */
+  border-radius: 3px;
+}
+
+.card-title {
+  font-family: "Josefin Sans";
+  color: #F8971D;
+  text-align: center;
+  background-color: #113643;
+  padding: .75em;
 }

@@ -13,32 +13,35 @@
     <h3>MyTrip</h3>
   </header>
 
-  <h3 class="title">My Trips</h3>
+  <h2 class="title">My Trips</h2>
   <div class="container">
+
     <% for(let i = 0; i < trips.length; i++) { %>
-      <ul>
+      <div class="trip-card">
+          <div class="image">
+            <img src="<%=trips[i].img; %>" alt="various images of national parks">
+          </div>
           <a href="/trips/<%=trips[i].id; %>">
-          <li><%=trips[i].nationalpark; %></li></a>
-          <li><%=trips[i].state; %></li>
-          <li><%=trips[i].season; %></li>
-          <li><%=trips[i].memory; %></li>
-          <li><%=trips[i].img; %></li>
-      </ul>
-    <!-- This is a delete button to delete a trip entry -->
-    <form action="/trips/<%=trips[i].id; %>?_method=DELETE" method="POST">
-      <input type="submit" name="" value="Delete">
-    </form>
+            <h4 class="card-title"><%=trips[i].nationalpark; %></h4></a>
+            <p>State: <%=trips[i].state; %></p>
+            <p>Season Visited:<%=trips[i].season; %></p>
+            <p>Favorite Memory: <%=trips[i].memory; %></p>
 
-    <!-- This is an edit button to edit an trip entry -->
-    <form action="/trips/<%=trips[i].id; %>/edit">
-      <input type="submit" name="" value="Edit">
-    </form>
+          <!-- This is a delete button to delete a trip entry -->
+          <form action="/trips/<%=trips[i].id; %>?_method=DELETE" method="POST">
+            <input type="submit" name="" value="Delete">
+          </form>
+          <!-- This is an edit button to edit an trip entry -->
+          <form action="/trips/<%=trips[i].id; %>/edit">
+            <input type="submit" name="" value="Edit">
+          </form>
+        </div>
+        <% } %>
 
-      <% } %>
-    </div>
+      </div>
 
-    <form class="" action="/trips/new">
-      <input type="submit" name="" value="Create New Trip">
-    </form>
-  </body>
-  </html>
+      <form class="" action="/trips/new">
+        <input type="submit" name="" value="Create New Trip">
+      </form>
+    </body>
+    </html>
