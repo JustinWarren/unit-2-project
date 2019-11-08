@@ -41,7 +41,7 @@ header h3 {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  border: solid 2px #0C0C0C;
+  /* border: solid 2px #0C0C0C; */
   padding: 3em;
 }
 
@@ -83,6 +83,16 @@ header h3 {
   padding: 35px 0 15px 0;
 }
 
+.index-button {
+  text-align: center;
+  padding: 2.1875em 0 2.1875em 0;
+}
+
+.show-button {
+  text-align: center;
+  padding: 2.1875em 0 2.1875em 0;;
+}
+
 /* STYLING FOR BUTTONS THROUGHOUT SITE */
 [type=submit] {
   border: 2px solid #113643;
@@ -117,7 +127,7 @@ label {
 
 /* THIS IS THE FOOTER STYLINGS */
 footer {
-  margin-top: 2.25em;
+  /* margin-top: 2.25em; */
   position: absolute; /*This positions the element relative to the browser window*/
   bottom: 0px;   /*This causes there to be no space btween bottom of page and footer*/
   width: 100%;

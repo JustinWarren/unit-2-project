@@ -8,7 +8,12 @@
     <title></title>
   </head>
   <body>
-    <h1>Trips show page</h1>
+    <header>
+      <a href="/trips"><img class="logo" src="https://i.imgur.com/TasFtEe.png" alt="Logo of mountains"></a>
+      <h3>MyTrip</h3>
+    </header>
+    <h2 class="title">My Trip Journal</h2>
+    <p>
       I went to <%=trips.nationalpark; %> national park.</br>
       It is located in the state of <%=trips.state; %>.</br>
       I went during the <%=trips.season; %>.</br>
@@ -17,9 +22,12 @@
       <div class="">
         <img src="<%=trips.img; %>" alt="">
       </div>
+      </p>
+      <div class="show-button">
+        <form action="/trips">
+          <input type="submit" name="" value="Back to Main Index">
+        </form>
+      </div>
 
-      <form action="/trips">
-        <input type="submit" name="" value="Back to Main Index">
-      </form>
   </body>
 </html>
