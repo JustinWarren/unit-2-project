@@ -36,9 +36,9 @@ header h3 {
   padding: 2.25em;
 }
 
-.container {
+.content-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
   border: solid 2px #0C0C0C;
@@ -47,8 +47,10 @@ header h3 {
 
 
 .trip-card {
-  /* border: solid 1px #113643; */
+  border: solid 1px #113643;
   border-radius: 3px;
+  /* background-color: orange; */
+  margin: 10px;
 }
 
 .card-title {
@@ -57,4 +59,9 @@ header h3 {
   text-align: center;
   background-color: #113643;
   padding: .75em;
+}
+
+.pics {
+  height: 20vw;
+  width: auto;
 }
