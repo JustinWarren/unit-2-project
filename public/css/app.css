@@ -51,6 +51,7 @@ header h3 {
   border-radius: 3px;
   /* background-color: orange; */
   margin: 10px;
+  max-width: 300px;
 }
 
 .card-title {
@@ -61,7 +62,38 @@ header h3 {
   padding: .75em;
 }
 
+/* Got this code from Jordan Morales! */
 .pics {
   height: 20vw;
   width: auto;
+}
+
+/* NEW.EJS - NEW PAGE CSS */
+/* This is the container around the form */
+.new-form{
+  border: 2px solid #113643;
+  text-align: left;
+  padding: 1em;
+  margin: 0 30%;
+}
+
+/* STYLING FOR BUTTONS THROUGHOUT SITE */
+[type=submit] {
+  border: 2px solid #113643;
+  font-family: "Josefin Sans";
+  background: #fff;
+  border-radius: 3px;
+}
+
+[type=submit]:hover {
+  border: 2px solid #F8971D;
+  font-family: "Josefin Sans";
+  background: #113643;
+  border-radius: 3px;
+  color: #F8971D;
+}
+/* This is the entry form on new.ejs */
+.form-group {
+  margin: 0 auto;
+  text-align: center;
 }

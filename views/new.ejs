@@ -13,13 +13,39 @@
       <h3>MyTrip</h3>
     </header>
     <h2 class="title">New Trip Log</h2>
-    <form class="" action="/trips" method="POST">
-      National Park: <input type="text" name="nationalpark" value=""></br>
-      State: <input type="text" name="state" value=""></br>
-      Season: <input type="text" name="season" value=""></br>
-      Favorite Memory: <input type="text" name="memory" value=""></br>
-      Image URL <input type="text" name="img" value=""></br>
-      <input type="submit" name="" value="Create Trip"></br>
-    </form>
+    <div class="new-form">
+          <form class="new-log" action="/trips" method="POST">
+            <div class="form-group">
+              <label for="">National Park:</label>
+              <input type="text" name="nationalpark" value=""></br>
+            </div>
+
+            <div class="form-group">
+              <label for="">State:</label>
+              <input type="text" name="state" value=""></br>
+            </div>
+
+            <div class="form-group">
+              <label for="">Season:</label>
+              <input type="text" name="season" value=""></br>
+            </div>
+
+            <div class="form-group">
+              <label for="">Image URL </label>
+              <input type="text" name="img" value=""></br>
+            </div>
+
+            <div class="form-group">
+              <label for="">Favorite Memory:</label>
+              <input type="textarea" name="memory" value=""></br>
+            </div>
+
+            <div class="create-button">
+                <input type="submit" class="createbtn" value="Create Trip"></br>
+            </div>
+
+          </form>
+    </div>
+
   </body>
 </html>
