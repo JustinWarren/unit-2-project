@@ -2,22 +2,58 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
   <title></title>
 </head>
 <body>
-  <h1>Edit Trip</h1>
-    <form action="/trips/<%=trips.id%>?_method=PUT" method="POST">
-      National Park: <input type="text" name="nationalpark" value="<%=trips.nationalpark%>"/></br>
-      State: <input type="text" name="state" value="<%=trips.state%>"/></br>
-      Season: <input type="text" name="season" value="<%=trips.season%>"/></br>
-      Favorite Memory: <input type="text" name="memory" value="<%=trips.memory%>"/></br>
-      Image URL <input type="text" name="img" value="<%=trips.img%>"/></br>
+  <header>
+    <a href="/trips"><img class="logo" src="https://i.imgur.com/TasFtEe.png" alt="Logo of mountains"></a>
+    <h3>MyTrip</h3>
+  </header>
+    <h2 class="title">Edit Trip</h2>
 
-      <!-- This is the button to submit changes -->
-      <input type="submit" value="Submit Changes">
-    </form>
+    <div class="new-form">
+      <form class="new-log" action="/trips/<%=trips.id%>?_method=PUT" method="POST">
+
+        <div class="form-group">
+          <label for="nationalpark">National Park:</label>
+          <input type="text" id="nationalpark" name="nationalpark" value="<%=trips.nationalpark%>"/>
+        </div>
+
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" value="<%=trips.state%>"/>
+        </div>
+
+        <div class="form-group">
+          <label for="season">Season:</label>
+          <input type="text" id="season" name="season" value="<%=trips.season%>"/>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL: </label>
+          <input type="text" id="image" name="img" value="<%=trips.img%>"/></br>
+        </div>
 
 
+        <div class="form-group">
+          <label for="memory">My Memory:</label>
+          <input type="text" id="memory" name="memory" value="<%=trips.memory%>"/></br>
+        </div>
 
+        <!-- This is the button to submit changes -->
+        <div class="create-button">
+          <input type="submit" value="Submit Changes">
+        </div>
+
+      </form>
+    </div>
+    <footer>
+      <div class="logo-info">
+        <p>Created my free logo at <a href="https://logomakr.com/">LogoMakr.com</a></p>
+      </div>
+    </footer>
   </body>
   </html>
