@@ -73,7 +73,8 @@ header h3 {
 .new-form{
   border: 2px solid #113643;
   text-align: left;
-  padding: 1.5em;
+  border-radius: 3px;
+  padding: 2.25em 1.5em;
   margin: 0 30%;
 }
 
@@ -106,12 +107,48 @@ header h3 {
 
 /* Source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form */
 .create-button input {
-  width: 300px;
+  width: 12em;
 }
 
 label {
-  width: 120px;
+  width: 7.5em;
   text-align: left;
 }
 
 /* THIS IS THE FOOTER STYLINGS */
+footer {
+  margin-top: 2.25em;
+  position: absolute; /*This positions the element relative to the browser window*/
+  bottom: 0px;   /*This causes there to be no space btween bottom of page and footer*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #113643;
+  padding: 1em;
+}
+
+Styling for github link in footer
+.footer-github {
+  padding: 10px;
+}
+
+.footer-github a {
+  color: #F8971D;
+}
+
+.footer-github p {
+  margin-bottom: 0;
+}
+
+.logo-info {
+  padding: 10px;
+}
+
+.logo-info a {
+  color: #F8971D;
+}
+
+.logo-info p {
+  color: #F8971D;
+}
