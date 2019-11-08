@@ -73,8 +73,13 @@ header h3 {
 .new-form{
   border: 2px solid #113643;
   text-align: left;
-  padding: 1em;
+  padding: 1.5em;
   margin: 0 30%;
+}
+
+.create-button {
+  text-align: center;
+  padding: 35px 0 15px 0;
 }
 
 /* STYLING FOR BUTTONS THROUGHOUT SITE */
@@ -83,6 +88,7 @@ header h3 {
   font-family: "Josefin Sans";
   background: #fff;
   border-radius: 3px;
+  font-size: 1.25em;
 }
 
 [type=submit]:hover {
@@ -97,3 +103,15 @@ header h3 {
   margin: 0 auto;
   text-align: center;
 }
+
+/* Source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form */
+.create-button input {
+  width: 300px;
+}
+
+label {
+  width: 120px;
+  text-align: left;
+}
+
+/* THIS IS THE FOOTER STYLINGS */
