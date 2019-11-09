@@ -18,22 +18,26 @@
     <% for(let i = 0; i < trips.length; i++) { %>
       <div class="trip-card">
         <div class="image">
+          <a href="/trips/<%=trips[i].id; %>">
           <img class="pics" src="<%=trips[i].img; %>" alt="various images of national parks">
         </div>
-        <a href="/trips/<%=trips[i].id; %>">
+        <!-- <a href="/trips/<%=trips[i].id; %>"> -->
           <h4 class="card-title"><%=trips[i].nationalpark; %></h4></a>
           <p>State: <%=trips[i].state; %></p>
           <p>Season Visited:<%=trips[i].season; %></p>
           <p>Favorite Memory: <%=trips[i].memory; %></p>
 
           <!-- This is a delete button to delete a trip entry -->
-          <form action="/trips/<%=trips[i].id; %>?_method=DELETE" method="POST">
-            <input type="submit" name="" value="Delete">
-          </form>
-          <!-- This is an edit button to edit an trip entry -->
-          <form action="/trips/<%=trips[i].id; %>/edit">
-            <input type="submit" name="" value="Edit">
-          </form>
+          <div class="index-buttons">
+            <form action="/trips/<%=trips[i].id; %>?_method=DELETE" method="POST">
+              <input type="submit" name="" value="Delete">
+            </form>
+            <!-- This is an edit button to edit an trip entry -->
+            <form action="/trips/<%=trips[i].id; %>/edit">
+              <input type="submit" name="" value="Edit">
+            </form>
+          </div>
+
         </div>
         <% } %>
       </div>
