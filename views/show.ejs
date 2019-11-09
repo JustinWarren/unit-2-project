@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/app.css">
-    <title></title>
-  </head>
-  <body>
-    <header>
-      <a href="/trips"><img class="logo" src="https://i.imgur.com/TasFtEe.png" alt="Logo of mountains"></a>
-      <h3>MyTrip</h3>
-    </header>
-    <h2 class="title">My Trip Journal</h2>
-    <p>
-      I went to <%=trips.nationalpark; %> national park.</br>
-      It is located in the state of <%=trips.state; %>.</br>
-      I went during the <%=trips.season; %>.</br>
-      My favorite memory was <%=trips.memory; %></br>
-      This is a picture:
-      <div class="">
-        <img src="<%=trips.img; %>" alt="">
-      </div>
-      </p>
-      <div class="show-button">
-        <form action="/trips">
-          <input type="submit" name="" value="Back to Main Index">
-        </form>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
+  <title></title>
+</head>
+<body>
+  <header>
+    <a href="/trips"><img class="logo" src="https://i.imgur.com/TasFtEe.png" alt="Logo of mountains"></a>
+    <h3>MyTrip</h3>
+  </header>
+  <h2 class="title">My Trip Journal</h2>
+    <div class="trip-journal">
+      <p class="trip-journal-text">
+        I went to <%=trips.nationalpark; %> national park.
+        It is located in the state of <%=trips.state; %>.
+        I went during the <%=trips.season; %> season.
+        My favorite memory was <%=trips.memory; %>
+    </p>
+    </div>
+    <div class="">
+      <img src="<%=trips.img; %>" alt="">
+    </div>
+  </p>
+  <div class="show-button">
+    <form action="/trips">
+      <input type="submit" name="" value="Back to Main Index">
+    </form>
+  </div>
 
-  </body>
+</body>
 </html>

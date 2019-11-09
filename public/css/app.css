@@ -51,15 +51,15 @@ header h3 {
   border-radius: 3px;
   /* background-color: orange; */
   margin: 10px;
-  max-width: 300px;
+  /* min-width: 18.75em; */
 }
 
-.index-buttons {
+.indexpage-buttons {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: .5em;
+  padding: 1.25em .5em 1.25em .5em;
   margin: 5px;
 }
 
@@ -139,6 +139,18 @@ label {
   width: 7.5em;
   text-align: left;
 }
+
+/* SHOW PAGE STYLINGS */
+.trip-journal {
+  font-size: 1.15em;
+  color: #F8971D;
+  font-family: "Josefin Sans";
+  border: solid 1px #113643;
+  border-radius: 3px;
+  margin: 3em 30%;
+  padding: 1.875em;
+}
+
 
 /* THIS IS THE FOOTER STYLINGS */
 .other-footer {
