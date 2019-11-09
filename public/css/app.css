@@ -126,7 +126,7 @@ label {
 }
 
 /* THIS IS THE FOOTER STYLINGS */
-footer {
+.other-footer {
   /* margin-top: 2.25em; */
   position: absolute; /*This positions the element relative to the browser window*/
   bottom: 0px;   /*This causes there to be no space btween bottom of page and footer*/
@@ -138,7 +138,14 @@ footer {
   padding: 1em;
 }
 
-Styling for github link in footer
+.index-footer {
+  display: inline-block;
+  width: 100%;
+  background-color: #113643;
+  padding: 1em;
+}
+
+/* Styling for github link in footer */
 .footer-github {
   padding: 10px;
 }
@@ -162,3 +169,6 @@ Styling for github link in footer
 .logo-info p {
   color: #F8971D;
 }
+
+
+/* MEDIA QUERIES */
