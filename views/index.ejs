@@ -18,12 +18,13 @@
     <% for(let i = 0; i < trips.length; i++) { %>
       <div class="trip-card">
 
+        <a href="/trips/<%=trips[i].id; %>">
         <div class="index-image">
           <img src="https://i.imgur.com/xH2U9ky.png" alt="cartoon picture of orange tent with mountains in backgroud">
           <!-- <a href="/trips/<%=trips[i].id; %>">
           <img class="pics" src="<%=trips[i].img; %>" alt="various images of national parks"> -->
         </div>
-          <a href="/trips/<%=trips[i].id; %>">
+
           <h4 class="card-title"><%=trips[i].nationalpark; %></h4></a>
 
           <div class="card-middle">
