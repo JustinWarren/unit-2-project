@@ -232,6 +232,15 @@ label {
     background-color: blue;
   }
 
+  .title {
+    text-align: center;
+    font-family: "Josefin Sans";
+    color: #F8971D;
+    padding-top: 2.25em;
+    padding-left: 2.25em;
+    padding-right: 2.25em;
+    padding-bottom: 1.5625em;
+  }
   .content-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -245,5 +254,16 @@ label {
   .logo-info {
     text-align: center;
   }
+
+  .new-form {
+    border: 2px solid #113643;
+    text-align: left;
+    font-size: 1.15em;
+    border-radius: 3px;
+    padding: 2.25em 1.5em;
+    margin: 0px 20%;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
+  }
+
 
 }
