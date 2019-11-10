@@ -18,15 +18,20 @@
     <% for(let i = 0; i < trips.length; i++) { %>
       <div class="trip-card">
 
-        <div class="image">
+        <div class="index-image">
+          <img src="https://i.imgur.com/xH2U9ky.png" alt="cartoon picture of orange tent with mountains in backgroud">
           <!-- <a href="/trips/<%=trips[i].id; %>">
           <img class="pics" src="<%=trips[i].img; %>" alt="various images of national parks"> -->
         </div>
           <a href="/trips/<%=trips[i].id; %>">
           <h4 class="card-title"><%=trips[i].nationalpark; %></h4></a>
-          <p>State: <%=trips[i].state; %></p>
-          <p>Season Visited:<%=trips[i].season; %></p>
-          <p>Favorite Memory: <%=trips[i].memory; %></p>
+
+          <div class="card-middle">
+            <p><strong>State:</strong> <%=trips[i].state; %></p>
+            <p><strong>Season:</strong> <%=trips[i].season; %></p>
+            <p class="word-wrap"><strong>Favorite Memory:</strong> <%=trips[i].memory; %></p>
+          </div>
+
 
           <!-- This is a delete button to delete a trip entry -->
           <div class="indexpage-buttons">

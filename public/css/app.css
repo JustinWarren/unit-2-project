@@ -45,13 +45,30 @@ header h3 {
   padding: 3em;
 }
 
-
+/* CARD STYLINGS ON INDEX PAGE */
 .trip-card {
   border: solid 1px #113643;
   border-radius: 3px;
   /* background-color: orange; */
   margin: 10px;
+  /* Source https://www.cssmatic.com/box-shadow */
+  box-shadow:  2px 5px 5px 0px rgba(0,0,0,0.75);
   /* min-width: 18.75em; */
+  max-width: 300px;
+}
+
+.index-image {
+  background-image: url(https://i.imgur.com/ubhXxgv.jpg?1);
+}
+.card-middle {
+  padding: .5em;
+  font-family: "Josefin Sans";
+  color: #113643;
+  font-size: 1.15em;
+}
+
+.word-wrap {
+  word-wrap: break-word;
 }
 
 .indexpage-buttons {
@@ -75,8 +92,8 @@ header h3 {
 .pics {
   /* height: 20vw;
   width: auto; */
-  background-repeat: no-repeat;
-  background-size: contain;
+  /* background-repeat: no-repeat;
+  background-size: contain; */
   /* width:100%; */
 }
 
@@ -91,6 +108,8 @@ img {
   border-radius: 3px;
   padding: 2.25em 1.5em;
   margin: 0 30%;
+  /* Source https://www.cssmatic.com/box-shadow */
+  box-shadow:  2px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .create-button {
@@ -151,6 +170,13 @@ label {
   padding: 1.875em;
 }
 
+.user-image {
+
+  max-width: 28.125em;  /*450px*/
+  margin: 0 auto;
+  border: solid 1px #113643;
+  border-radius: 3px;
+}
 
 /* THIS IS THE FOOTER STYLINGS */
 .other-footer {
@@ -191,10 +217,12 @@ label {
 
 .logo-info a {
   color: #F8971D;
+  font-family: "Josefin Sans";
 }
 
 .logo-info p {
   color: #F8971D;
+  font-family: "Josefin Sans";
 }
 
 

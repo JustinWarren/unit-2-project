@@ -15,13 +15,16 @@
   <h2 class="title">My Trip Journal</h2>
     <div class="trip-journal">
       <p class="trip-journal-text">
-        I went to <%=trips.nationalpark; %> national park.
+        <strong>I went to <%=trips.nationalpark; %> national park.
         It is located in the state of <%=trips.state; %>.
-        I went during the <%=trips.season; %> season.
-        My favorite memory was <%=trips.memory; %>
+        I went during the <%=trips.season; %> season, and
+        my favorite memory was <%=trips.memory; %> Below is my
+        favorite picture from the trip!</strong>
     </p>
     </div>
-    <div class="">
+
+    <!-- Div for the image from user input -->
+    <div class="user-image">
       <img src="<%=trips.img; %>" alt="">
     </div>
   </p>
