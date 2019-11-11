@@ -181,8 +181,10 @@ label {
 /* THIS IS THE FOOTER STYLINGS */
 .other-footer {
   /* margin-top: 2.25em; */
-  position: absolute; /*This positions the element relative to the browser window*/
-  bottom: 0px;   /*This causes there to be no space btween bottom of page and footer*/
+  position: absolute;
+  /*This positions the element relative to the browser window*/
+  bottom: 0px;
+    /*This causes there to be no space btween bottom of page and footer*/
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -245,9 +247,9 @@ label {
 
 
 @media screen and (max-width: 768px) {
-  /* body {
+  body {
     background-color: blue;
-  } */
+  }
 
   .title {
     text-align: center;
@@ -286,6 +288,9 @@ label {
 }
 
 @media screen and (max-width: 425px) {
+  body {
+    background-color: firebrick;
+  }
   /* This is the form that is on the edit.ejs and new.ejs */
     .new-form {
       border: 2px solid #113643;
@@ -293,7 +298,24 @@ label {
       font-size: 1.15em;
       border-radius: 3px;
       padding: 2.25em 1.5em;
+      /* This will allow the form to have less spacing on the left and right */
       margin: 0px 4%;
       box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
     }
+
+    .create-button input {
+        width: 8em;
+    }
+    /* This is the new footer info for new.ejs and edit.ejs */
+    .other-footer {
+    margin-top: 2.1875em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #113643;
+    padding: 1em;
+  }
+
+
 }
