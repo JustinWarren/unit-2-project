@@ -247,9 +247,9 @@ label {
 
 
 @media screen and (max-width: 768px) {
-  body {
+  /* body {
     background-color: blue;
-  }
+  } */
 
   .title {
     text-align: center;
@@ -285,6 +285,9 @@ label {
     box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.75);
   }
 
+  .trip-journal {
+    margin: 3em 20%;
+  }
 }
 
 @media screen and (max-width: 659px) {
@@ -306,6 +309,9 @@ label {
     width: 10em;
     padding: 5px;
   }
+  .trip-journal {
+    margin: 3em 14%;
+  }
 }
 
 @media screen and (max-width: 475px) {
@@ -317,9 +323,9 @@ label {
 
 
 @media screen and (max-width: 425px) {
-  body {
+  /* body {
     background-color: firebrick;
-  }
+  } */
   /* This is the form that is on the edit.ejs and new.ejs */
     .new-form {
       border: 2px solid #113643;
@@ -340,6 +346,10 @@ label {
       width: 7.5em;
       padding: 5px;
     }
+}
 
-
+@media screen and (max-width: 375px) {
+  .trip-journal {
+    margin: 3em 5%;
+  }
 }
