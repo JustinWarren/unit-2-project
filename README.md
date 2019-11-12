@@ -4,7 +4,7 @@ My Trip App
 
 https://ancient-everglades-48830.herokuapp.com/trips (Heroku Site)
 
-This app was created using several different technologies:  HTML, CSS, Express.js, Mongoose, MongoDB and Node.js.  This app has full CRUD capability and utilizes all 7 RESTful routes.  The app is has been deployed via Heroku at the above address.
+This app was created using several different technologies:  HTML, CSS, Express.js, Mongoose, MongoDB and Node.js.  This app has full CRUD capability and utilizes all 7 RESTful routes.  In addition, the app uses the MVC model (Models, Views, Controller).  The app is has been deployed via Heroku at the above address.
 
 The purpose of the app is to allow users to keep track of the National Parks that they have visited in the United States.  Users have the ability to add trips along with details and a favorite picture.  In addition to this, users have the ability to update their entry or delete it entirely.
 
